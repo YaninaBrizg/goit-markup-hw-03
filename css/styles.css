@@ -104,6 +104,9 @@ img {
   background-color: var(--navyblue);
 }
 .hero-title {
+  width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
@@ -163,6 +166,9 @@ img {
 }
 
 .section-title {
+  width: 324px;
+  margin: 0 auto;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -171,6 +177,19 @@ img {
   text-transform: capitalize;
   color: var(--navyblue);
   background-color: var(--white);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .team {
