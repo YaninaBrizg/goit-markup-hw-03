@@ -5,6 +5,8 @@
   --white: #ffffff;
   --cloud: #f4f4fd;
   --ocean: #404bbf;
+  --indent: 24px;
+  --items: 4;
 }
 
 body {
@@ -30,12 +32,33 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .link {
@@ -55,12 +78,6 @@ p {
   margin: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -70,6 +87,9 @@ img {
   text-transform: uppercase;
   flex: none;
   color: var(--iris);
+  display: flex;
+  align-items: center;
+  margin-right: 76px;
 }
 .logo-dark {
   color: var(--navyblue);
@@ -83,9 +103,15 @@ img {
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: flex;
 }
 
-.header-nav-list {
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -97,6 +123,11 @@ img {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.adress-list {
+  display: flex;
+  gap: 40px;
 }
 
 .hero {
@@ -154,13 +185,23 @@ img {
   background-color: var(--ocean);
 }
 
-.advantages-list {
+.advantages-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navyblue);
 }
+
+.advantages-list {
+  display: flex;
+  gap: var(--indent);
+}
+
+.advantages-list-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
 .advantages-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -177,7 +218,6 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navyblue);
-  background-color: var(--white);
 }
 
 .visually-hidden {
@@ -231,8 +271,14 @@ img {
 .footer {
   background-color: var(--navyblue);
 }
+
+.footer-container {
+  justify-content: center;
+}
 .footer-text {
   color: var(--cloud);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+  margin-top: 16px;
 }
