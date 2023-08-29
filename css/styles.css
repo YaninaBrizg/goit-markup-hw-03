@@ -104,6 +104,7 @@ img {
   background-color: var(--navyblue);
 }
 .hero-title {
+  color: var(--white);
   width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
