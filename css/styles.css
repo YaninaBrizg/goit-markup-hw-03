@@ -106,12 +106,15 @@ img {
   gap: 40px;
   padding: 24px 0;
 }
+
 .nav-list-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navyblue);
+}
+.nav-link {
   padding-top: 24px;
   padding-bottom: 24px;
 }
