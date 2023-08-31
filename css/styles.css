@@ -5,8 +5,6 @@
   --white: #ffffff;
   --cloud: #f4f4fd;
   --ocean: #404bbf;
-  --indent: 24px;
-  --items: 4;
 }
 
 body {
@@ -45,16 +43,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--indent);
-}
-
-.card-set-item {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .header-container {
@@ -188,7 +176,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding: 12 24;
+  padding: 12px 24px;
   border-radius: 4px;
 }
 
@@ -228,11 +216,11 @@ img {
 
 .advantages-list {
   display: flex;
-  gap: var(--indent);
+  gap: 24px;
 }
 
 .advantages-list-item {
-  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .advantages-text {
@@ -273,9 +261,6 @@ img {
 .tasks-set {
   display: flex;
   gap: 24px;
-}
-
-.tasks-item {
 }
 
 .team {
