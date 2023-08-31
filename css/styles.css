@@ -98,7 +98,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   display: flex;
-  padding: 0 15px 0 15px;
+  padding: 24px 0;
   align-items: center;
 }
 
@@ -114,7 +114,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navyblue);
-  padding: 24px 0;
 }
 
 .adress {
@@ -134,7 +133,7 @@ img {
 }
 
 .hero-container {
-  padding: 188px 0 188px;
+  padding: 188px 0;
 }
 
 .hero-title {
